@@ -1,8 +1,8 @@
 # swarmstack/influxdb
 
-InfluxDB Docker compose for swarmstack
+Optional InfluxDB Docker compose for swarmstack Prometheus long-term storage
 
-##USAGE:
+## USAGE:
 
 ```
 INFLUXDB_ADMIN_USER='admin' \
