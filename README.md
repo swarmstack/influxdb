@@ -4,7 +4,13 @@ InfluxDB Docker compose for swarmstack
 
 ##USAGE:
 
-    INFLUXDB_ADMIN_USER='admin' INFLUXDB_ADMIN_PASSWORD='admin' INFLUXDB_USER='prometheus' INFLUXDB_USER_PASSWORD='prompass' docker stack deploy -c docker-compose.yml influxdb
+```
+INFLUXDB_ADMIN_USER='admin' \
+INFLUXDB_ADMIN_PASSWORD='admin' \
+INFLUXDB_USER='prometheus' \
+INFLUXDB_USER_PASSWORD='prompass' \
+docker stack deploy -c docker-compose.yml influxdb
+```
 
 Or you can take some or all of the defaults above:
 
