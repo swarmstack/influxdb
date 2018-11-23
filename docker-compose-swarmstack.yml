@@ -1,4 +1,16 @@
-version: "3.4"
+version: "3.3"
+
+networks:
+  default:
+    external:
+      name: swarmstack_net
+
+volumes:
+    influxdb-data:
+      driver: pxd
+      driver_opts:
+        repl: 2
+        size: 40
 
 # https://docs.influxdata.com/influxdb/v1.7/administration/config
 services:
@@ -26,5 +38,5 @@ services:
         reservations:
           memory: 1024M
     volumes:
-      - ./local_bind_volume_dir:/var/lib/influxdb
+      - influxdb-data:/var/lib/influxdb
 

@@ -1,6 +1,6 @@
 # swarmstack/influxdb
 
-Optional InfluxDB Docker compose for swarmstack Prometheus long-term storage
+Docker compose file for InfluxDB
 
 ## USAGE:
 
@@ -15,6 +15,8 @@ docker stack deploy -c docker-compose.yml influxdb
 Or you can take some or all of the defaults above:
 
     docker stack deploy -c docker-compose.yml influxdb
+
+[swarmstack](https://github.com/swarmstack/swarmstack) users should use docker-compose-swarmstack.yml instead.
 
 You'll also need to add remote-write and remote-read stanzas to your localswarmstack/prometheus/conf/prometheus.yml:
 
