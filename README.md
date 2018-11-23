@@ -1,6 +1,6 @@
 # swarmstack/influxdb
 
-Docker compose file for InfluxDB
+Docker compose file for InfluxDB, also useful for Prometheus long-term storage
 
 ## USAGE:
 
