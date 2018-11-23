@@ -40,6 +40,10 @@ services:
           memory: 2048M
         reservations:
           memory: 1024M
+    healthcheck:
+      test: "ln -sf /bin/busybox /bin/wget && /bin/wget -q -Y off http://localhost:8086/metrics -O /dev/null > /dev/null 2>&1"
+      interval: 25s
+      timeout: 3s
+      start_period: 30s
     volumes:
       - influxdb-data:/var/lib/influxdb
-
