@@ -3,7 +3,7 @@ version: "3.4"
 # https://docs.influxdata.com/influxdb/v1.7/administration/config
 services:
   influxdb:
-    image: influxdb:1.7.1-alpine
+    image: influxdb:1.7.6-alpine
     environment:
       - INFLUXDB_ADMIN_ENABLED=true 
       - INFLUXDB_ADMIN_USER=${INFLUXDB_ADMIN_USER:-admin}
