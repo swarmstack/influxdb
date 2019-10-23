@@ -39,3 +39,5 @@ remote_read:
 ## GRAFANA DASHBOARD
 
 A [dashboard](https://grafana.com/grafana/dashboards/11032) which nicely visualizes all 'internal' Grafana OSS metrics documented at [InfluxData.com](https://docs.influxdata.com/platform/monitoring/influxdata-platform/tools/measurements-internal/) and exported via [influxdb_stats_exporter](https://github.com/carlpett/influxdb_stats_exporter) into Prometheus.
+
+![](https://raw.githubusercontent.com/swarmstack/influxdb/master/grafana/influxdb-oss.png "Grafana dashboard for InfluxDB Internals")
