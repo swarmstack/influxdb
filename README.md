@@ -1,6 +1,8 @@
 # swarmstack/influxdb
 
-Docker compose file for InfluxDB OSS version, also useful for Prometheus long-term storage
+Docker compose file for InfluxDB OSS version, also useful for Prometheus long-term storage.
+
+See [https://github.com/swarmstack/victoria-metrics](https://github.com/swarmstack/victoria-metrics) for highly performant time-series database that can be used for Prometheus metrics long-term storage, uses signficantly less RAM and supports higher-cardinality time-series data than the OSS version of InfluxDB.
 
 ## DEPLOY INFLUXDB AS A STACK
 
