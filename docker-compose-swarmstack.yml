@@ -15,7 +15,7 @@ volumes:
 # https://docs.influxdata.com/influxdb/v1.7/administration/config
 services:
   influxdb:
-    image: influxdb:1.7.7-alpine
+    image: influxdb:1.7-alpine
     environment:
       - INFLUXDB_ADMIN_ENABLED=true 
       - INFLUXDB_ADMIN_USER=${INFLUXDB_ADMIN_USER:-admin}
